@@ -2,16 +2,16 @@
 # NVIDIA Jetson TX2
 # TensorFlow Installation
 # Install Bazel
-# Version 0.11.1
+# Version2.2.0
 # We use the release distribution so that we don't have to build protobuf
 #
 INSTALL_DIR=$PWD
 cd $HOME
-wget https://github.com/bazelbuild/bazel/releases/download/0.11.1/bazel-0.11.1-dist.zip
-unzip bazel-0.11.1-dist.zip -d bazel-0.11.1-dist
+wget https://github.com/bazelbuild/bazel/releases/download/2.2.0/bazel-2.2.0-dist.zip
+unzip bazel-2.2.0-dist.zip -d bazel-2.2.0-dist
 
-sudo chmod -R ug+rwx $HOME/bazel-0.11.1-dist
+sudo chmod -R ug+rwx $HOME/bazel-2.2.0-dist
 # git clone https://github.com/bazelbuild/bazel.git
-cd bazel-0.11.1-dist
+cd bazel-2.2.0-dist
 ./compile.sh 
 sudo cp output/bazel /usr/local/bin
